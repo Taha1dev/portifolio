@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,7 +18,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        scode: ['var(--scode)', 'monospace'],
+      },
       colors: {
+        main: '#4169E1',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,7 +1,15 @@
+interface HeadingProps {
+  showValue: string
+  className?: string
+}
 
-const Heading1 = () => {
+const Heading1 = (props: HeadingProps) => {
   return (
-    <h1 className='text-center font-semibold capitalize text-3xl'>Know more about me</h1>
+    <h1
+      className={`${props.className} pointer-events-none capitalize z-10 whitespace-pre-wrap font-extrabold leading-none tracking-wide text-4xl sm:text-5xl md:text-6xl lg:text-7xl p-1 `}
+    >
+      {props.showValue}
+    </h1>
   )
 }
 
