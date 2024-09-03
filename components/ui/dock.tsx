@@ -90,7 +90,7 @@ const DATA = {
 
 function DockComponent() {
   return (
-    <div className="z-50 pointer-events-auto absolute bottom-3 flex items-center px-1 ">
+    <div className="pointer-events-auto flex items-center justify-center px-1 ">
         <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (
