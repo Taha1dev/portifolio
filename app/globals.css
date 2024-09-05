@@ -81,3 +81,6 @@
   background-color: #ccd6f6;
   color: black;
 }
+p{
+  @apply text-lg
+}

@@ -1,6 +1,7 @@
 'use client'
 import { NeonGradientCard } from '../magicui/neon-gradient-card'
 import Globe from '../magicui/globe'
+import Image from 'next/image'
 
 const AboutMe = () => {
   const navigateDown = () => {
@@ -9,23 +10,44 @@ const AboutMe = () => {
 
   return (
     // <NeonGradientCard className="items-center justify-center text-center *:text-white ">
-      <section className="relative flex flex-col items-center justify-center gap-8 p-8 ">
-        <span className="pointer-events-none capitalize z-10 h-full whitespace-pre-wrap text-center text-6xl font-bold leading-none tracking-tighter text-white ">
-          about me
-        </span>
-        <div className="flex lg:flex-row flex-col justify-center items-center">
-          <p className="text-xl max-w-6xl text-center text-gray-300">
-            I'm a skilled front-end developer with two years of experience, specializing in{' '}
-            <span className="font-semibold text-white underline">React</span>,{' '}
-            <span className="font-semibold text-white underline">Next.js</span>, and{' '}
-            <span className="font-semibold text-white underline">Angular</span>. I craft responsive, high-quality user
-            interfaces that deliver exceptional user experiences. I’m passionate about staying current with industry
-            trends and continuously enhancing my skills to provide innovative solutions.
+    <section className="bg-darkBlue text-white py-12 px-6" id="about-me">
+      <div className="container mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
+        {/* Left: Text Section */}
+        <div className="md:w-2/3">
+          <h2 className="text-2xl md:text-3xl font-extrabold  mb-4">About Me</h2>
+          <p className="mb-6">
+            Hello! My name is Taha and I enjoy creating things that live on the internet. My interest in web development
+            started in 2021 when I decided to pursue becoming a web developer — experimenting with building small
+            projects and solving coding challenges taught me a lot about HTML & CSS and{' '}
+            <span className="text-[#efd81d]">JavaScript</span>
           </p>
-          
+          <p className="mb-6">
+            Fast-forward to today, and I’ve had the privilege of working at a
+            <span className="text-main"> company that develops e-government services</span>, My main focus these days is
+            building accessible, inclusive products and digital experiences for a variety of clients.
+          </p>
+          <p className="mb-6">
+            I’ve recently started learning about <span className="text-main">mobile development </span>
+            and diving deeper into frontend topics such as <span className="text-main">micro frontend </span>,
+            <span className="text-main">state management</span>, and more.
+          </p>
         </div>
-        {/* </NeonGradientCard> */}
-      </section>
+
+        {/* Right: Image Section */}
+        <div className="md:w-1/3 flex justify-center">
+          <div className="relative">
+            <Image
+              width={500}
+              height={500}
+              src="/profile.jpg"
+              alt="Brittany Profile"
+              className="rounded-lg border-4 border-main shadow-lg w-80"
+            />
+            <div className="absolute inset-0 bg-main mix-blend-multiply  opacity-60 hover:mix-blend-normal hover:opacity-10"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

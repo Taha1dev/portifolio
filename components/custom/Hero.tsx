@@ -15,7 +15,7 @@ export default function Hero() {
       <p className={`font-mono text-main bg-main/20 rounded-md px-1 font-medium z-10 mb-4`}>Hi my name is</p>
       <Heading1 className="!text-[#ccd6f6]" showValue="Taha AL Mulla." />
       <Heading1 className="!text-[#8892b0]" showValue="I build things for the web." />
-      <p className="max-w-2xl z-10 text-justify whitespace-pre-wrap text-wrap text-gray-200 my-4">
+      <p className="max-w-2xl z-10 text-justify whitespace-pre-wrap text-wrap text-gray-200 my-4 text-lg">
         I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
         Currently, I’m focused on developing innovative e-government services at{' '}
         <span className="font-semibold cursor-pointer text-white">Injaz Tech</span>, creating accessible, human-centered
