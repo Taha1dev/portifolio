@@ -1,13 +1,7 @@
 'use client'
-import { NeonGradientCard } from '../magicui/neon-gradient-card'
-import Globe from '../magicui/globe'
 import Image from 'next/image'
 
 const AboutMe = () => {
-  const navigateDown = () => {
-    // window.scrollTo()
-  }
-
   return (
     // <NeonGradientCard className="items-center justify-center text-center *:text-white ">
     <section className="bg-darkBlue text-white py-12 px-6" id="about-me">
@@ -39,8 +33,8 @@ const AboutMe = () => {
             <Image
               width={500}
               height={500}
-              src="/profile.jpg"
-              alt="Brittany Profile"
+              src="/profsile.jpg"
+              alt="Taha Profile"
               className="rounded-lg border-4 border-main shadow-lg w-80"
             />
             <div className="absolute inset-0 bg-main mix-blend-multiply  opacity-60 hover:mix-blend-normal hover:opacity-10"></div>

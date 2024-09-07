@@ -11,6 +11,7 @@ const App = () => {
       <Hero />
       <AboutMe />
       <Skills />
+      <Services/>
       <div className="z-50 flex items-center justify-center sticky bottom-3 ">
         <DockComponent />
       </div>

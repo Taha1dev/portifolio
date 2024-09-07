@@ -1,9 +1,12 @@
+'use client'
 import Heading1 from '../chunks/Heading1'
 import IconCloud from '../magicui/icon-cloud'
+
 const slugs = [
   'typescript',
   'javascript',
   'react',
+  'vscode',
   'android',
   'html5',
   'css3',
@@ -18,6 +21,8 @@ const slugs = [
   'git',
   'jira',
   'github',
+  'angular',
+  'gitlab',
   'gitlab',
   'visualstudiocode',
   'figma',
