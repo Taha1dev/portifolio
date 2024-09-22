@@ -7,6 +7,9 @@ import ShimmerButton from '../magicui/shimmer-button'
 import styles from '@/components/css/main.module.css'
 import { NeonGradientCard } from '../magicui/neon-gradient-card'
 export default function Hero() {
+  const sayHi = () => {
+    console.log('bye')
+  }
   return (
     <div className="flex relative h-full w-full flex-col justify-start items-start lg:p-48 lg:pt-36 md:p-24 sm:p-12 pt-40 ">
       {/* <div className=" "> */}

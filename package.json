@@ -25,7 +25,8 @@
     "react-icon-cloud": "^4.1.4",
     "react-spring": "^9.7.4",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",

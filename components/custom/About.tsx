@@ -13,17 +13,19 @@ const AboutMe = () => {
             Hello! My name is Taha and I enjoy creating things that live on the internet. My interest in web development
             started in 2021 when I decided to pursue becoming a web developer — experimenting with building small
             projects and solving coding challenges taught me a lot about HTML & CSS and{' '}
-            <span className="text-[#efd81d]">JavaScript</span>
+            <span className="text-[#efd81d]  select-none">JavaScript</span>
           </p>
           <p className="mb-6">
             Fast-forward to today, and I’ve had the privilege of working at a
-            <span className="text-main"> company that develops e-government services</span>, My main focus these days is
-            building accessible, inclusive products and digital experiences for a variety of clients.
+            <span className="text-main select-none"> company that develops e-government services</span>, My main focus
+            these days is building accessible, inclusive products and digital experiences for a variety of clients.
           </p>
           <p className="mb-6">
-            I’ve recently started learning about <span className="text-main">mobile development </span>
-            and diving deeper into frontend topics such as <span className="text-main">micro frontend </span>,
-            <span className="text-main">state management</span>, and more.
+            I’ve recently started learning about{' '}
+            <span className="text-main capitalize  select-none">mobile development </span>
+            and diving deeper into frontend topics such as{' '}
+            <span className="text-main capitalize   select-none">micro frontend </span>,
+            <span className="text-main capitalize  select-none">web components</span>, and more.
           </p>
         </div>
 

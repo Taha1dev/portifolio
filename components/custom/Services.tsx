@@ -1,55 +1,52 @@
-import { ChevronsUp, Search, Code, LayoutDashboard } from 'lucide-react'
-import { MagicCard } from '../magicui/magic-card'
+'use client'
+import ServicesCard from './ServicesCard'
 import Heading1 from '../chunks/Heading1'
 
-const services = [
+const cards = [
   {
-    title: 'Performance Optimization',
-    icon: <ChevronsUp className="h-8 w-8 text-blue-500" />,
-    description: 'Improve website speed and performance for a smoother user experience.',
-  },
-  {
-    title: 'SEO Optimization',
-    icon: <Search className="h-8 w-8 text-green-500" />,
-    description: 'Optimize your site to rank higher in search engine results and attract more traffic.',
-  },
-  {
+    src: '/svg/skills/react.svg',
+    alt: 'Web Development',
     title: 'Web Development',
-    icon: <Code className="h-8 w-8 text-red-500" />,
-    description:
-      'Build and Develop responsive and scalable web applications using modern web technologies and frameworks.',
+    description: 'Building High-quality web application using modern solutions',
   },
   {
+    src: '/svg/ui_ux.svg',
+    alt: 'UI/UX Design',
     title: 'UI/UX Design',
-    icon: <LayoutDashboard className="h-8 w-8 text-purple-500" />,
-    description: 'Create intuitive and visually appealing interfaces that enhance user engagement and user experience.',
+    description: ' Specialize in creating intuitive and visually appealing user interfaces.',
+  },
+  {
+    src: '/svg/newseo.svg',
+    alt: 'SEO Optimization',
+    title: 'SEO Optimization',
+    description: " SEO optimization services improve your website's visibility in search engine  building",
+  },
+  {
+    src: '/svg/webpack.svg',
+    alt: 'Performance Optimization',
+    title: 'Performance Optimize',
+    description: 'Optimize websites and applications to deliver fast and efficient performance.',
   },
 ]
 
-const ServiceCards = () => {
+const Services = () => {
   return (
-    <main id="services">
-      <Heading1 className="text-center !text-4xl" showValue="Services" />
-      <p className="text-center my-3">
-        These are the essential tools, libraries, and frameworks that constitute my current tech stack, enabling me to
-        develop robust and innovative applications
-      </p>
-      <section className={' grid w-full grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2'}>
-        {services.map((service, index) => (
-          <MagicCard
+    <div id="services">
+      <Heading1 className="text-center !text-4xl" showValue="What I'm Doing" />
+      <div className="my-12 grid lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4 mx-28">
+        {cards.map((card, index) => (
+          <ServicesCard
             key={index}
-            className="flex flex-col items-center justify-center p-5 border border-main/20 cursor-pointer shadow-2xl text-center"
-          >
-            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-            <p className="text-base font-scode text-justify text-gray-500">{service.description}</p>
-            <div className="flex flex-col items-center justify-center mb-4">
-              <span className="text-center">{service.icon}</span>
-            </div>
-          </MagicCard>
+            src={card.src}
+            alt={card.alt}
+            title={card.title}
+            description={card.description}
+            className={`logo${index + 1}`}
+          />
         ))}
-      </section>
-    </main>
+      </div>
+    </div>
   )
 }
 
-export default ServiceCards
+export default Services

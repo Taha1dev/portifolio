@@ -14,7 +14,7 @@
 }
 
 .coolBeans::after {
-  background-color: #4169E1;
+  background-color: #FFBF00;
   border-radius: 3rem;
   content: '';
   display: block;
