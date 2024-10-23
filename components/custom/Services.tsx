@@ -1,6 +1,4 @@
-'use client'
-import ServicesCard from './ServicesCard'
-import Heading1 from '../chunks/Heading1'
+
 
 const cards = [
   {
@@ -30,23 +28,7 @@ const cards = [
 ]
 
 const Services = () => {
-  return (
-    <div id="services">
-      <Heading1 className="text-center !text-4xl" showValue="What I'm Doing" />
-      <div className="my-12 grid lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4 mx-28">
-        {cards.map((card, index) => (
-          <ServicesCard
-            key={index}
-            src={card.src}
-            alt={card.alt}
-            title={card.title}
-            description={card.description}
-            className={`logo${index + 1}`}
-          />
-        ))}
-      </div>
-    </div>
-  )
+  return <></>
 }
 
 export default Services

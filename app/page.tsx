@@ -7,14 +7,16 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className="container mx-auto relative h-screen">
+    <div className='bg-[#121212]'>
       <Hero />
+      <div className="container mx-auto relative h-screen ">
       <AboutMe />
       <Skills />
       <Services/>
       <div className="z-50 flex items-center justify-center sticky bottom-3 ">
         <DockComponent />
       </div>
+    </div>
     </div>
   )
 }

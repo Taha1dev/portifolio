@@ -68,9 +68,6 @@
     @apply border-border;
   }
 
-  body {
-    @apply bg-foreground text-background;
-  }
 }
 
 .font-mono {
@@ -78,8 +75,8 @@
 }
 
 ::selection {
-  background-color: transparent;
-  color: #ccd6f6;
+  background-color: #ccd6f6;
+  color:#121212
 }
 
 p {
@@ -87,4 +84,23 @@ p {
 }
 .text-last{
   text-align-last: center;
+}
+#img{
+  position:relative;
+}
+#img::before{
+  font-size: 14px;
+  left: 106px;
+  top: 23px;
+  text-align: center;
+  width: 139px;
+  content: 'Taha Al Mulla 👋';
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  color: black;
+  border-radius: 16px;
+  padding: 5px 10px;
+  font-weight: 900;
+  transform: rotate(341deg) translate(0px, 0px);
 }

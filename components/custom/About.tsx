@@ -4,7 +4,7 @@ import Image from 'next/image'
 const AboutMe = () => {
   return (
     // <NeonGradientCard className="items-center justify-center text-center *:text-white ">
-    <section className="bg-darkBlue text-white py-12 px-6" id="about-me">
+    <section className=" text-white py-12 px-6" id="about-me">
       <div className="container mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
         {/* Left: Text Section */}
         <div className="md:w-2/3">
